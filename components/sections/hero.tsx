@@ -18,63 +18,63 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col justify-center space-y-4"
+            className="flex flex-col justify-center space-y-6"
           >
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+            <div className="space-y-4">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Medhansh Patel
               </h1>
-              <p className="text-lg text-muted-foreground sm:text-xl">
+              <p className="text-xl text-muted-foreground sm:text-2xl">
                 Full Stack Developer, DevOps Engineer & Community Leader
               </p>
-              <p className="max-w-[600px] text-muted-foreground md:text-lg">
+              <p className="max-w-[600px] text-lg text-muted-foreground">
                 Founder of CloudCraft | Building scalable solutions and fostering tech communities
               </p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button asChild>
+            <div className="flex flex-wrap gap-3">
+              <Button size="lg" asChild>
                 <Link href="#projects">
                   Explore Projects <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" asChild>
+              <Button size="lg" variant="outline" asChild>
                 <Link href="https://cloud-craft.netlify.app" target="_blank" rel="noopener noreferrer">
                   Join CloudCraft
                 </Link>
               </Button>
-              <Button variant="outline" asChild>
+              <Button size="lg" variant="outline" asChild>
                 <Link href="#contact">
                   Contact Me
                 </Link>
               </Button>
-              <Button variant="secondary" asChild>
+              <Button size="lg" variant="secondary" asChild>
                 <Link href="/resume.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </Link>
               </Button>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 pt-2">
               <Link href="https://github.com/Patelmedhansh" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="h-10 w-10">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
               <Link href="https://www.linkedin.com/in/medhansh-patel-6b9349215/" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="h-10 w-10">
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </Link>
               <Link href="https://www.youtube.com/@medhansh39" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="h-10 w-10">
                   <Youtube className="h-5 w-5" />
                   <span className="sr-only">YouTube</span>
                 </Button>
               </Link>
               <Link href="https://x.com/Medhanshhhh" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="h-10 w-10">
                   <Twitter className="h-5 w-5" />
                   <span className="sr-only">Twitter</span>
                 </Button>
