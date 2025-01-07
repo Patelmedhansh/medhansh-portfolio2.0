@@ -13,7 +13,7 @@ interface BlogPost {
   brief: string
   slug: string
   dateAdded: string
-  coverImage?: string // Make coverImage optional
+  coverImage?: string
 }
 
 export function BlogSection() {
@@ -23,14 +23,14 @@ export function BlogSection() {
   useEffect(() => {
     async function fetchPosts() {
       const articles = await getHashnodeArticles()
-      setPosts(articles as BlogPost[]) // Type assertion since we know the structure matches
+      setPosts(articles as BlogPost[])
       setLoading(false)
     }
     fetchPosts()
   }, [])
 
   return (
-    <section id="blog" className="py-16 md:py-24 bg-muted/50">
+    <section id="blog" className="py-16 md:py-24 bg-muted/50 w-full">
       <div className="container px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ export function BlogSection() {
                     <div className="p-6 pt-0">
                       <Button variant="outline" asChild>
                         <Link 
-                          href={`https://hashnode.com/@Medhanshhh/${post.slug}`} 
+                          href={`https://medhansh.hashnode.dev/${post.slug}`}
                           target="_blank" 
                           rel="noopener noreferrer"
                         >
