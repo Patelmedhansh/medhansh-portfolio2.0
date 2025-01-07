@@ -8,8 +8,8 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-16 md:py-24">
-      <div className="container px-4 md:px-6">
+    <section id="about" className="py-16 md:py-24 w-full">
+      <div className="container px-4 md:px-6 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ export function AboutSection() {
             <CardContent className="p-6">
               <div className="aspect-square relative rounded-lg overflow-hidden">
                 <Image
-                  src="medhansh.jpg"
+                  src="/medhansh.jpg"
                   alt="Medhansh Patel"
                   fill
                   className="object-cover"

@@ -1,18 +1,18 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Linkedin, Youtube, Twitter, Download } from "lucide-react"
 import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center">
+    <section id="home" className="relative min-h-screen w-full flex items-center">
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
         <div className="absolute inset-0 bg-gradient-to-r from-background to-background/20" />
       </div>
 
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-6 max-w-6xl mx-auto">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button size="lg" variant="secondary" asChild>
-                <Link href="/resume.pdf" download>
+                <Link href="/medhansh-patel-resume.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </Link>
