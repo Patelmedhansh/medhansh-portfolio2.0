@@ -26,8 +26,8 @@ const testimonials = [
 
 export function CommunitySection() {
   return (
-    <section id="community" className="py-16 md:py-24">
-      <div className="container px-4 md:px-6">
+    <section id="community" className="py-16 md:py-24 w-full flex justify-center">
+      <div className="container px-4 md:px-6 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -40,8 +40,8 @@ export function CommunitySection() {
             <p className="text-muted-foreground md:text-lg">Making cloud learning accessible and fun for everyone</p>
           </div>
           
-          <div className="grid gap-6 lg:grid-cols-[1fr_1.5fr]">
-            <Card className="h-fit">
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.5fr] items-start">
+            <Card className="h-fit lg:sticky lg:top-24">
               <CardHeader>
                 <CardTitle>CloudCraft Initiatives</CardTitle>
                 <CardDescription>Join our thriving tech community</CardDescription>
@@ -49,7 +49,7 @@ export function CommunitySection() {
               <CardContent className="space-y-6">
                 <div className="space-y-4">
                   <h3 className="text-lg font-semibold">What We Offer</h3>
-                  <ul className="grid gap-2 text-muted-foreground">
+                  <ul className="grid gap-3 text-muted-foreground">
                     <li className="flex items-center">
                       <span className="mr-2">•</span>
                       Interactive Workshops
