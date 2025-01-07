@@ -8,19 +8,39 @@ import { MessageSquare } from "lucide-react"
 
 const testimonials = [
   {
-    name: "John Doe",
-    role: "Cloud Engineer",
-    content: "CloudCraft has been instrumental in my cloud journey. The community is supportive and the learning resources are excellent."
-  },
-  {
-    name: "Jane Smith",
-    role: "DevOps Engineer",
-    content: "The workshops and hands-on projects helped me transition into DevOps. Great community!"
-  },
-  {
-    name: "Mike Johnson",
+    name: "Poojan Prajapati",
     role: "Full Stack Developer",
-    content: "The mentorship program is fantastic. I learned so much about cloud architecture and best practices."
+    content: "CloudCraft's comprehensive DevOps workshops helped me master containerization and CI/CD pipelines. The hands-on projects were invaluable for my professional growth."
+  },
+  {
+    name: "Jasmeen Kaur Pabla",
+    role: "MERN Stack Developer",
+    content: "Through CloudCraft, I learned how to deploy and scale MERN applications on cloud platforms. The community support made complex concepts easy to grasp."
+  },
+  {
+    name: "Deep Mehta",
+    role: "Software Engineer",
+    content: "CloudCraft's infrastructure-as-code sessions transformed my approach to cloud architecture. The practical exercises in AWS and Azure were extremely beneficial."
+  },
+  {
+    name: "Rahil Shah",
+    role: "UX/UI Designer & AI/ML Engineer",
+    content: "The community helped me understand how to deploy and manage ML models in production. The DevOps practices I learned are essential for my AI projects."
+  },
+  {
+    name: "Divya Mulchandani",
+    role: "Cybersecurity Specialist",
+    content: "CloudCraft's focus on security best practices in cloud environments has been crucial for my career in cybersecurity. The hands-on labs were particularly helpful."
+  },
+  {
+    name: "Ziyan Chasmawala",
+    role: "MERN Stack Developer",
+    content: "The community's expertise in cloud services helped me optimize my MERN applications for scale. The mentorship program was a game-changer."
+  },
+  {
+    name: "Dev Vaghela",
+    role: "MERN Stack Developer",
+    content: "CloudCraft taught me essential DevOps practices for MERN applications. The community's guidance on cloud deployment strategies was invaluable."
   }
 ]
 
