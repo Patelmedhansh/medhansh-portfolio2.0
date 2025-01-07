@@ -13,7 +13,7 @@ interface BlogPost {
   brief: string
   slug: string
   dateAdded: string
-  coverImage: string
+  coverImage?: string // Make coverImage optional
 }
 
 export function BlogSection() {
@@ -23,7 +23,7 @@ export function BlogSection() {
   useEffect(() => {
     async function fetchPosts() {
       const articles = await getHashnodeArticles()
-      setPosts(articles)
+      setPosts(articles as BlogPost[]) // Type assertion since we know the structure matches
       setLoading(false)
     }
     fetchPosts()
